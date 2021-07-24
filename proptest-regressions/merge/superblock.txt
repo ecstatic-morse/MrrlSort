@@ -1,0 +1,9 @@
+# Seeds for failure cases proptest has generated in the past. It is
+# automatically read and these particular cases re-run before any
+# novel cases are generated.
+#
+# It is recommended to check this file in to source control so that
+# everyone who runs the test benefits from these saved cases.
+cc 63f55dd118367b41dac0c57139f90a1c0ffbc84bf17b82c1b013d78ca731e436 # shrinks to (input, block_size) = (Split { seq: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], at: 2 }, 2)
+cc b09785085cb38a06682c393e277f8ca5ceddcdf9018ef69d3faf491d14571280 # shrinks to (input, block_size) = (Split { seq: [2, 2, 4, 5, 6, 6, 6, 6, 7, 8, 8, 8, 9, 9, 10, 10, 10, 10, 11, 12, 12, 12, 13, 14, 16, 17, 18, 20, 20, 20, 22, 23, 25, 26, 27, 8, 15, 21, 28], at: 35 }, 7)
+cc dacbed4f0215f9d42a183b37ce213b598abde1fb8a4a6075a7e67720f52c0f8e # shrinks to input = Split { seq: Chunked { seq: [0, 0, 0, 27, 3, 5, 5, 12, 15, 21, 24, 26], chunk_size: 2 }, at: Blk(2) }
